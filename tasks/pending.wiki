@@ -1,0 +1,2 @@
+[  ] Make personal documentation repository
+[  ] Set password manager
