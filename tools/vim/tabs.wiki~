@@ -1,0 +1,29 @@
+= Commands =
+vim -p[N] %% Opens Vim with N tabs
+
+== New tabs ==
+:tabnew %% Opens a new tab
+:+tabnew %% Opens a new tab after the current one
+:-tabnew %% Opens a new tab befor the current one
+:0tabnew %% Opens a new tab befor the first one
+:$tabnew %% Opens a new tab befor the first one
+:tab split %% Opens a copy of the current file in another tab
+
+== Close tabs ==
+:tabc[lose] %% Close current tab
+:tabo[nly] %% Close all tabs except current one
+
+== Switch tabs ==
+:tabn[ext] %% Go to next tab
+gt %% same as above
+:tabp[revious] %% Go to previous tab
+gT %% same as above
+:tabfir[st] %% Go to first tab
+:tabl[ast] %% Go to last tab
+
+== Move tabs ==
+:tabm[ove] [N] %% Move the current tab after N tabs
+:+tabmove %% Move tab to the right
+:-tabmove %% Move tab to the left
+:0tabmove %% Move tab before first tab
+ raght

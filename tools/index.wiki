@@ -1,0 +1,3 @@
+[[vim/index|Vim]]
+[[vimwiki|VimWik]]
+
