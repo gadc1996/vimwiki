@@ -1,0 +1,89 @@
+= Git =
+	== Version control ==
+	Version control is a system that records changes to a file or set of files over time so that
+	you can recall specific version later.
+	Version control is originally intended for software, but can also be use for any kind of 
+	project(graphic design for example)
+
+		=== A Version control allow you to: ===
+		1. Revert selected files back to a previous state
+		2. Revert the entire project nack to a previous state
+		3. Compare changes over time
+		4. See who last modified something
+		5. Who introduced an issue and when
+		6. Recover files
+
+		=== Version constrol systems ===
+		1. Local version control systems (VCS)
+		2. centralized version control system (CVCS)
+		3. Distributed version control systems (DVCS)
+
+
+	== Git ==
+		=== Git advanteges ===
+		1. Nearly Every operation can be done locally
+		2. Everything in git is checksummed
+		3. Git generally only adds data
+
+		=== Git states ===
+		Modified:: File has been changed but is not committed
+		Staged:: Modified file has been marked to go into next commit
+		Commited:: data is stored in local database
+
+		=== Git sections ===
+		Working tree:: A local copy of a project
+		Staging area:: A file that contains information about what will go on next commit
+		Git directory:: Where git stores the database of the project
+
+		=== Git workflow ===
+		1. Modify files in the working tree
+		2. Selectively stage changes that are going to be part of the next commit
+		3. Commit changes to git directory
+
+
+	== Git Configuration ==
+	Git comes with a tool called `git config`, that lets you get and set configuration variables that 
+	all aspects of how git operates, there are three main configuration files:
+		
+		1. `/etc/gitconfig`
+			Contains values applied to every user on the system and all their repositories, because this
+			is a system configuration file it needs superuser privilege to make changes to it, this file
+			can by accesed using `git config --system`
+	
+		2. `~/.gitconfig or ~/.config/git/config` 
+			Specific configuration for the user, it can be accesed with `git config --global`
+		
+		3. `.git/config`	
+			Specific configuration for any project or current repository, can be accesed using
+			`git config --local`
+
+	Each level overwrites the values in the previous levels
+
+	You can view all actual configuration as well as where are they comming from using:
+	`git config --list --show-origin`
+
+		=== Setting up git for the first time ===
+		1. Set username and email
+			`git config --global user.name "John Doe"`
+			`git config --global user.email john@doe.com"`
+
+		2. Text editor
+			`git config --global core.editor vim`		
+
+		3. Default branch name
+			`git config --global init.defaultBranch main`
+
+		4. Checking configurations
+			`git config --list`
+
+		5. Check specific configuration
+			`git config <configuration>`
+
+	== Getting help ==
+	There are three equivalent ways to get help from git
+
+			1. `git help <verb>`
+			2. `git <verb> --help`
+			3. `man git-<verb>`
+
+

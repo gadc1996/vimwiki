@@ -3,6 +3,7 @@ My knowledge base
 		* [[tools/index|Tools]] -- Awesome toys for the cool kids.
     * [[Project Gutenberg]] -- good books are power.
     * [[Scratchpad]] -- various temporary stuff.
+		* [[linux/index|Linux]] -- All hail the penguin
 
 Personal stuff
 		* [[diary/index|Diary]]

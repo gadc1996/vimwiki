@@ -1,0 +1,38 @@
+= ArchLinux =
+	== Installation ==
+	More on this later
+
+	== Post-installation ==
+		=== Connecting to a network ===
+			==== Installing Network Manager ==== 
+				1. Install NetworkManager from Arch official repository
+					`pacman -S NetworkManager`
+	
+				2. Enable Network manager
+					`sudo systemctl enable NetworkManager.service`
+	
+				3. Enable support for wireless connections
+					`sudo systemctl enable wpa_supplicant.service` 
+
+				4. Start Network Manager
+					`sudo systemctl start NetworkManager.service` 
+
+				5. Reboot
+ 					`sudo reboot`
+
+			==== Using Network Manager ====
+				1. Show available networks
+					`nmcli device wifi list` 
+ 
+				2. Connect to a network
+					`nmcli device wifi connect <SSID> password <SSID Password> ` 
+ 
+				3. List connected networks
+					`nmcli connection show ` 
+ 
+				4. Device status 
+					`nmcli device ` 
+ 
+ 
+ 		=== Import Vim configuration ===
+			1. [[/tools/git|Configure git]]	
