@@ -1,0 +1,10 @@
+= Hacking =
+	== Basic tools ==
+	- [[command line|Command Line]]
+	- [[bash|Bash]]
+	- nmap
+	
+	== Resources ==
+	1. [[https://www.thecybermentor.com|The Cyber Mentor]]
+	2. [[https://www.hackthebox.eu|Hack The Box]]
+	3. [[https://www.elearnsecurity.com|E learn]]

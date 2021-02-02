@@ -1,0 +1,47 @@
+= Command line =
+	== Basic Commands ==
+	ls :: List
+	cd :: Change Directory
+	pwd :: Print Work Directory
+	mv :: Move
+	cp :: Copy
+	rm :: Remove
+	mkdir :: Make Directory
+	rmdir :: Remove Directory
+	locate
+	passwd :: Password
+	man :: Manual page
+	help
+
+	== More Commands ==
+	cat :: Concatenate
+ 	chmod :: Change Mode
+	adduser
+	su :: SuperUser/Change User
+	sudo :: SuperUser Do
+	echo :: Display a line of text
+	> :: Write to a file
+	>> :: Append to a file
+	touch :: Create empty file
+	nano :: Cli text editor
+	gedit :: GUI text editor
+	grep :: Returns lines that contain a query
+	cut :: Slice line
+	tr :: Translate
+	| :: Pipes commands
+	
+	== Basic Network Commands ==
+	ifconfig :: Interface Configure 
+	iwconfig :: Interface Wireless Configure
+	ping :: Send Echo_Request to network hosts
+	arp :: Manipulate [[glossary#ARP|ARP cache]]
+	netstat:: Print network connections
+	route :: Show IP routing table
+	
+	== Services commands ==
+	service :: Run a systemd unit 
+	systemctl :: Control system service and service manager
+	
+	== Basic tools ==
+	1. Package manager
+	2. git/github

@@ -33,6 +33,5 @@
 				4. Device status 
 					`nmcli device ` 
  
- 
  		=== Import Vim configuration ===
 			1. [[/tools/git|Configure git]]	

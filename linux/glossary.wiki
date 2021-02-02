@@ -1,0 +1,48 @@
+= Glossary =
+	== ARP ==
+	The address resolution protocols is a [[#Communication Protocol|comunication protocol]] used to discover  
+	the [[#Link Layer|link]] layer address associated with a given [[#Internet Layer|internet layer]] address
+	
+	== Communication Protocol ==
+	Is a system of rules that allow two or more entities of a communications system
+	to transmit information information
+	
+	== Internet Layer ==
+	Is a group of internetworking methods, protocols and specification in the internet
+	protocol suite that are used to transport network packets from the originating host
+	across network boundaries
+	
+	== Link Layer ==
+	Is the lowest layer in the internet protocol suite
+	
+	== Modular ==
+	Modular design or modularity is a design principle that subdivides a system into smaller 
+	parts called modules, which can be independently created, modified, replated or exchanged
+	with other modules or between different systems
+	
+	== OS ==
+	The operating systeme is system software that manages computer hardware, software resources and 
+	provides common services for computer programs
+	
+	== Superuser ==
+	The superuser is a special user account used for system administration, it is also known as root,
+	administrator, admin or supervisor, depending of the [[glossary#OS|OS]], the user identifier for this user
+	is zero in [[glossary#Unix-like|unix-like]] systems, regardless of the name.
+	In role base security model, any user with a role of suuperuser is capable of making unrestricted
+	potentially advers, system-wide changes.
+	
+	= Unix =
+	FAmily of multitasking, multiuser computer [[Glossary#OS|OS]] that derive from the original
+	AT&T Unix.
+	Unix systems are characterized by a [[Glosarry#Modular|modular]] design that is usually known as
+	the "Unix philosophy", according to this philosophy, the [[Glossary#OS|OS]] should provide:
+	
+	 1. A set of simple tools, each of which performs a limited, well-defined function
+	 2. A unified filesystem
+	 3. An inter-process communication mechanism known as pipes
+	 4. A shell scripting and command lenguaje
+	
+	== Unix-like ==
+	Is a glossary#OS|OS that behaves in a similar maner to a [[Glossary#Unix|unix]] system, without being certified
+	to any [[Glossarry#Unix|unix]] specification
+	

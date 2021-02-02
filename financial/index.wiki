@@ -3,5 +3,5 @@ buys
 [[wants/index|Things that i want but not really need]]
 
 Expenses
-Fixed expense
-General expenses
+[[fixed|Fixed expenses]]
+[[general|General expenses]]

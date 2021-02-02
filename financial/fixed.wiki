@@ -1,0 +1,22 @@
+= Fixed Expenses =
+	== Spotify ==
+	Cost: $179.00
+	Pay-Day: 2
+	
+	== Netflix ==
+	Cost: $266.00
+	Pay-Day: 2
+	
+	== Famsa: ==
+	Cost: $1500.00
+	Pay-Day: 2, 17
+	
+	== Cellphone: ==
+	Cost: $1500.00
+	Pay-Day: 21
+	
+	== Youtube: ==
+	Cost: $229.00
+	
+	== Crunchyroll ==
+	Cost: $129
