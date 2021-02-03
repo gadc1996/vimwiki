@@ -1,37 +1,208 @@
 = ArchLinux =
 	== Installation ==
-	More on this later
+		=== Verify the boot mode ===
+		List the efivars directory
+			`ls /sys/firmware/efi/efivars`
+			
+		=== Connect to the internet ===	
+		1. Make sure wireless card is not blocked
+			`rfkill`
+			
+		2. If the card is hard blocked use the hardware button
 
+		3. If the card is soft blocked use this command
+			`rfkill unblock wifi`
+			
+		4. Connect to the network
+			1. List device names
+				`iwctl device list`
+				
+			2. Scan for networks
+				`iwctl station <device> scan`
+				
+			3. List available networks
+				`iwctl station <device> get-networks`
+				
+			4. Connect to a network
+				`iwctl station <device> connect SSID`
+
+			5. Check connection
+				`ping google.com`
+	
+		=== Update the system clock ===	
+		1. Ensure the system clock is accurate
+			`timedatectl set-ntp true`
+			
+		2. Check the service status
+			`timedatectl status`
+		
+		=== Partition the disks ===
+		1. List devices
+			`fdisk -l`
+			
+		2. Select partition
+			`fdisk /dev/sda`
+			
+		3. Create the following partition table
+			| Partition | Size      | Format           | Mount Point |
+			| ----      | ----      | ----             | ----        |
+			| EFI       | 260M      | EFI System       | /mnt/boot   |
+			| Swap      | 512M      | Linux swap       | N/A         |
+			| Root      | Remaining | Linux filesystem | /mnt        |
+			|           |           |                  |             |
+	
+		4. Format the partitions
+
+		5. Write partition table
+
+		6. Format the partitions
+			`mkfs.fat -F32 /dev/sda1`
+			`mkswap /dev/sda2`
+			`mkfs.ext4 /dev/sda3`
+			
+		7. Enable swap
+		 	`swapon /dev/sda2`
+			
+		8. Mount the partitions
+			`mount /dev/sda3 /mnt`	
+
+		=== Install essential packages ===
+		`pacstrap /mnt base linux linux-firmware`
+		
+		=== Generate Fstab ===
+		`genfstab -U /mnt >> /mnt/etc/fstab`
+		
+		=== Change to root ===
+		`arch-chroot /mnt`
+		
+		=== Set timezone ===
+		1. If you know your City and Region
+			`ln -sf /usr/share/zoneinfo/<Region>/<City>/etc/localtime`
+			
+		2. List available regions
+			`ls /usr/share/zoneinfo`
+			
+		3. List available cities
+			`ls/usr/share/zoneinfo/<Region>/`
+
+		4. Set hardware clock
+			`hwclock --systohc`
+			
+		=== Set localization ===
+		1. Get a text editor
+			`pacman -S vim`
+			
+		2. Edit locale.gen and uncomment locale
+			`vim  /etc/locale.gen`
+			
+		3. Generete locale
+			`locale-gen`
+			
+		4. Create /etc/locale.conf
+			`echo LANG=en_US.UTF-8 >> /etc/locale.conf`
+
+		=== Set hostname ===
+		1. Create hostname file
+			`echo <hostname> >> /etc/hostname`
+			
+		2. Create host file at /etc/hosts	
+			{{{
+				127.0.0.1	localhost
+				::1		localhost
+				127.0.1.1	myhostname.localdomain	myhostname
+			}}}
+			
+		=== Configure users ===
+		1. Set password for root
+			`passwd`
+		
+		2. Add new user
+			`useradd -m <user-name>`
+			
+		3. Add password to new user
+			`passwd <user-name>`
+			
+		4. Add user to wheel group
+			`usermod -aG wheel,audio,video,optical,storage <user-name>`
+			
+		5. Get sudo
+			`pacman -S sudo`  
+			
+		6. Uncomment line 83 of sudoers file `%wheel ALL=(ALL) ALL` 
+			`EDITOR=vim visudo`
+		
+		=== Install GRUB ===
+		1. Install grub
+			`pacman -S grub`
+		
+	 	2. Install dependencies
+			`pacman -S efibootmgr dosfstools os-prober mtools`
+		
+		3. Make EFI directory
+			`mkdir /boot/EFI`
+		
+		4. Mount EFI partition
+			`mount /dev/sda1 /boot/EFI`
+			
+		5. Install grub in a partition
+			`grub-install -target=x86_64-efi --bootloader-id=grub_uefi --recheck`
+		
+		6. Make grub configuration file
+			`grub-mkconfig -o /boot/grub/grub.cfg`
+			
+		=== Install aditional software ===
+		1. Install network manager
+			`pacman -S networkmanager`
+		
+		2. Install git
+			`pacman -S git`
+
+		=== Enable Network manager ===
+		
+		Finish installation
+		1. Exit chroot
+			`exit`
+			
+		2. Unmount
+			`umount /mnt -l`
+			
+		3. Reboot
+			`reboot`
 	== Post-installation ==
 		=== Connecting to a network ===
 			==== Installing Network Manager ==== 
-				1. Install NetworkManager from Arch official repository
-					`pacman -S NetworkManager`
+			1. Install NetworkManager from Arch official repository
+				`pacman -S NetworkManager`
 	
-				2. Enable Network manager
-					`sudo systemctl enable NetworkManager.service`
 	
-				3. Enable support for wireless connections
-					`sudo systemctl enable wpa_supplicant.service` 
+			2. Enable network manager
+			 `sudo systemctl enable NetworkManager.service`
+			 
+			3. Enable support for wireless connections
+				`sudo systemctl enable wpa_supplicant.service` 
 
-				4. Start Network Manager
-					`sudo systemctl start NetworkManager.service` 
+			4. Start Network Manager
+				`sudo systemctl start NetworkManager.service` 
 
-				5. Reboot
- 					`sudo reboot`
+			5. Reboot
+ 				`sudo reboot`
 
 			==== Using Network Manager ====
-				1. Show available networks
-					`nmcli device wifi list` 
+			1. Show available networks
+				`nmcli device wifi list` 
  
-				2. Connect to a network
-					`nmcli device wifi connect <SSID> password <SSID Password> ` 
+			2. Connect to a network
+				`nmcli device wifi connect <SSID> password <SSID Password> ` 
  
-				3. List connected networks
-					`nmcli connection show ` 
+			3. List connected networks
+				`nmcli connection show ` 
  
-				4. Device status 
-					`nmcli device ` 
- 
- 		=== Import Vim configuration ===
+			4. Device status 
+				`nmcli device ` 
+ 			
+			Install Window manager
+			1. Install xorg
+				`sudo pacman -S xorg`
+
+ 			=== Import Vim configuration ===
 			1. [[/tools/git|Configure git]]	
