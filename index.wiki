@@ -1,16 +1,5 @@
-My knowledge base
+= My knowledge base =
 		* [[tools/index|Tools]] -- Awesome toys for the cool kids.
 		* [[linux/index|Linux]] -- All hail the penguin
  
-Organization
-    * [[tasks/index|Tasks]] -- things to be done _yesterday_!!!
-		* [[financial/index|Financial]]
-		* [[projects/index|projects]]
-    * [[Scratchpad]] -- various temporary stuff.
 
-Academic
-		* [[lectures/index|Lectures]]
-		* [[courses/index|Courses]]
-
-Personal stuff
-		* [[diary/index|Diary]]

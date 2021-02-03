@@ -1,7 +1,0 @@
-buys
-[[needs/index|Things that i need]]
-[[wants/index|Things that i want but not really need]]
-
-Expenses
-[[fixed|Fixed expenses]]
-[[general|General expenses]]
