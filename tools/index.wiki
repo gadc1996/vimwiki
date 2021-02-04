@@ -1,4 +1,4 @@
-[[git]]
+= [[git]] =
 [[vim/index|Vim]]
 [[vimwiki|VimWik]]
 

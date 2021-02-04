@@ -86,4 +86,37 @@
 			2. `git <verb> --help`
 			3. `man git-<verb>`
 
-
+	== Basic commands ==	
+	`
+		 git init:: Initializes a new repository
+		 git clone:: Clone a repository, can specify the name of the directory as an additional command
+		 git add:: Add specified files to staging area
+		 git commit:: Commit staged files
+		 git status:: Shows tracked, untracked and staged files
+		 git diff:: Shows changes that have not yet staged, use --staged to show changes in stages files
+		 git rm:: Remove file from working directory, use --staged to remove from staging area
+		 git mv:: Moves or renames a file and automatically stage the change 
+	`
+	
+	== Git ignore ==
+	Having a `.gitignore` file inside of a project specifies to git a list of files and 
+	directories that are not going to be tracked.
+	
+	As well as configurations, there can be a global `.gitignore ` file that will be used
+	for all projects, and a local `.gitignore` file for the repository, local configurations
+	outweights global configuration
+	
+		=== Configure a global .gitignore ===
+		`git config --global core.excludesfiles ~/.gitignore_global`
+	
+	There is also possible to have a `.gitignore` inside a directory in a project, this 
+	.gitignore rules apply only to the files under the directory
+	
+	== Glob patterns ==
+	Glob patterns are simplified Regular Expressions that shell use, the basic sintax elements
+	of glob patterns are:
+		*:: Matches zero or more characters
+		[abd]:: Matches any character inside the brackets
+		?:: Matches a single character 
+		[0-9]:: Matches any character between the range of characters
+		a/**/z:: Matches nested directories
