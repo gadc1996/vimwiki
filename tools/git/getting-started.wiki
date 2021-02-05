@@ -1,0 +1,19 @@
+= Getting Started =
+	== Version Control ==
+	Version control is a system that records changes to a file or set of files over time so that
+	you can recall specific version later.
+	Version control is originally intended for software, but can also be use for any kind of 
+	project(graphic design for example)
+
+	Version control allow you to:
+	1. Revert selected files back to a previous state
+	2. Revert the entire project nack to a previous state
+	3. Compare changes over time
+	4. See who last modified something
+	5. Who introduced an issue and when
+	6. Recover files
+
+	== Version Constrol Systems ==
+	1. Local version control systems (VCS)
+	2. centralized version control system (CVCS)
+	3. Distributed version control systems (DVCS)

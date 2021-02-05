@@ -1,0 +1,38 @@
+= Git Configuration  =
+Git comes with a tool called `git config`, that lets you get and set configuration variables that 
+all aspects of how git operates, there are three main configuration files:
+	
+	1. `/etc/gitconfig`
+		Contains values applied to every user on the system and all their repositories, because this
+		is a system configuration file it needs superuser privilege to make changes to it, this file
+		can by accesed using `git config --system`
+
+	2. `~/.gitconfig or ~/.config/git/config` 
+		Specific configuration for the user, it can be accesed with `git config --global`
+	
+	3. `.git/config`	
+		Specific configuration for any project or current repository, can be accesed using
+		`git config --local`
+
+Each level overwrites the values in the previous levels
+
+You can view all actual configuration as well as where are they comming from using:
+`git config --list --show-origin`
+
+	== Setting Up Git For The First Time ==
+	1. Set username and email
+		`git config --global user.name "John Doe"`
+		`git config --global user.email john@doe.com"`
+
+	2. Text editor
+		`git config --global core.editor vim`		
+
+	3. Default branch name
+		`git config --global init.defaultBranch main`
+
+	4. Checking configurations
+		`git config --list`
+
+	5. Check specific configuration
+		`git config <configuration>`
+

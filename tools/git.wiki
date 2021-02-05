@@ -1,122 +1,28 @@
-= Git =
-	== Version control ==
-	Version control is a system that records changes to a file or set of files over time so that
-	you can recall specific version later.
-	Version control is originally intended for software, but can also be use for any kind of 
-	project(graphic design for example)
+= Index =
+	-  [[git/getting-started|Getting Started]]
+		- [[git/getting-started#Version Control|Version Control]]
+		- [[git/getting-started#Version Constrol Systems|Version Constrol Systems]] 
 
-		=== A Version control allow you to: ===
-		1. Revert selected files back to a previous state
-		2. Revert the entire project nack to a previous state
-		3. Compare changes over time
-		4. See who last modified something
-		5. Who introduced an issue and when
-		6. Recover files
+	- [[git/git|Git]]
+		- [[git/git#Advantages|Advantages]]
+		- [[git/git#States|States]]
+		- [[git/git#Sectionts|Sectionts]]
+		- [[git/git#Workflow|Workflow]]
 
-		=== Version constrol systems ===
-		1. Local version control systems (VCS)
-		2. centralized version control system (CVCS)
-		3. Distributed version control systems (DVCS)
+	- [[git/git-configuration|Git Configuration]]
+		- [[git/git-configuration#Setting Up Git For The First Time|Setting Up Git For The First Time]]
 
+	- [[git/gitignore|Git ignore]]
 
-	== Git ==
-		=== Git advanteges ===
-		1. Nearly Every operation can be done locally
-		2. Everything in git is checksummed
-		3. Git generally only adds data
+	- Git Commands
+		- [[git/basic-commands|Basic Commands]]
+		- [[git/git-log|Git Log]]
+			-[[git/git-log#Arguments|Arguments]]
+			-[[git/git-log#Filters|Filters]]
+			-[[git/git-log#Pretty Formats|Pretty Formats]]
+			-[[git/git-log#Format Specifiers|Format Specifiers]]
 
-		=== Git states ===
-		Modified:: File has been changed but is not committed
-		Staged:: Modified file has been marked to go into next commit
-		Commited:: data is stored in local database
-
-		=== Git sections ===
-		Working tree:: A local copy of a project
-		Staging area:: A file that contains information about what will go on next commit
-		Git directory:: Where git stores the database of the project
-
-		=== Git workflow ===
-		1. Modify files in the working tree
-		2. Selectively stage changes that are going to be part of the next commit
-		3. Commit changes to git directory
+	- [[git/getting-help|Getting Help]] 
 
 
-	== Git Configuration ==
-	Git comes with a tool called `git config`, that lets you get and set configuration variables that 
-	all aspects of how git operates, there are three main configuration files:
-		
-		1. `/etc/gitconfig`
-			Contains values applied to every user on the system and all their repositories, because this
-			is a system configuration file it needs superuser privilege to make changes to it, this file
-			can by accesed using `git config --system`
 	
-		2. `~/.gitconfig or ~/.config/git/config` 
-			Specific configuration for the user, it can be accesed with `git config --global`
-		
-		3. `.git/config`	
-			Specific configuration for any project or current repository, can be accesed using
-			`git config --local`
-
-	Each level overwrites the values in the previous levels
-
-	You can view all actual configuration as well as where are they comming from using:
-	`git config --list --show-origin`
-
-		=== Setting up git for the first time ===
-		1. Set username and email
-			`git config --global user.name "John Doe"`
-			`git config --global user.email john@doe.com"`
-
-		2. Text editor
-			`git config --global core.editor vim`		
-
-		3. Default branch name
-			`git config --global init.defaultBranch main`
-
-		4. Checking configurations
-			`git config --list`
-
-		5. Check specific configuration
-			`git config <configuration>`
-
-	== Getting help ==
-	There are three equivalent ways to get help from git
-
-			1. `git help <verb>`
-			2. `git <verb> --help`
-			3. `man git-<verb>`
-
-	== Basic commands ==	
-	`
-		 git init:: Initializes a new repository
-		 git clone:: Clone a repository, can specify the name of the directory as an additional command
-		 git add:: Add specified files to staging area
-		 git commit:: Commit staged files
-		 git status:: Shows tracked, untracked and staged files
-		 git diff:: Shows changes that have not yet staged, use --staged to show changes in stages files
-		 git rm:: Remove file from working directory, use --staged to remove from staging area
-		 git mv:: Moves or renames a file and automatically stage the change 
-	`
-	
-	== Git ignore ==
-	Having a `.gitignore` file inside of a project specifies to git a list of files and 
-	directories that are not going to be tracked.
-	
-	As well as configurations, there can be a global `.gitignore ` file that will be used
-	for all projects, and a local `.gitignore` file for the repository, local configurations
-	outweights global configuration
-	
-		=== Configure a global .gitignore ===
-		`git config --global core.excludesfiles ~/.gitignore_global`
-	
-	There is also possible to have a `.gitignore` inside a directory in a project, this 
-	.gitignore rules apply only to the files under the directory
-	
-	== Glob patterns ==
-	Glob patterns are simplified Regular Expressions that shell use, the basic sintax elements
-	of glob patterns are:
-		*:: Matches zero or more characters
-		[abd]:: Matches any character inside the brackets
-		?:: Matches a single character 
-		[0-9]:: Matches any character between the range of characters
-		a/**/z:: Matches nested directories

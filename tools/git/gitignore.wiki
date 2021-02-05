@@ -1,0 +1,22 @@
+= Git Ignore =
+Having a `.gitignore` file inside of a project specifies to git a list of files and 
+directories that are not going to be tracked.
+
+As well as configurations, there can be a global `.gitignore ` file that will be used
+for all projects, and a local `.gitignore` file for the repository, local configurations
+outweights global configuration
+
+	 == Configure A Global .gitignore ==
+	`git config --global core.excludesfiles ~/.gitignore_global`
+	
+	There is also possible to have a `.gitignore` inside a directory in a project, this 
+	.gitignore rules apply only to the files under the directory
+	
+	== Glob Patterns ==
+	Glob patterns are simplified Regular Expressions that shell use, the basic sintax elements
+	of glob patterns are:
+		*:: Matches zero or more characters
+		[abd]:: Matches any character inside the brackets
+		?:: Matches a single character 
+		[0-9]:: Matches any character between the range of characters
+		a/**/z:: Matches nested directories

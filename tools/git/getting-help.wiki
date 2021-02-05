@@ -1,0 +1,6 @@
+= Getting Help =
+There are three equivalent ways to get help from git
+
+		1. `git help <verb>`
+		2. `git <verb> --help`
+		3. `man git-<verb>`

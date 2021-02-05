@@ -1,0 +1,20 @@
+= Git =
+	== Advantages ==
+	1. Nearly Every operation can be done locally
+	2. Everything in git is checksummed
+	3. Git generally only adds data
+
+	== States ==
+	Modified:: File has been changed but is not committed
+	Staged:: Modified file has been marked to go into next commit
+	Commited:: data is stored in local database
+
+	== Sections ==
+	Working tree:: A local copy of a project
+	Staging area:: A file that contains information about what will go on next commit
+	Git directory:: Where git stores the database of the project
+
+	== Workflow ==
+	1. Modify files in the working tree
+	2. Selectively stage changes that are going to be part of the next commit
+	3. Commit changes to git directory

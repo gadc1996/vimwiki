@@ -1,0 +1,10 @@
+= Basic Commands =
+git init:: Initializes a new repository
+git clone:: Clone a repository, can specify the name of the directory as an additional command
+git add:: Add specified files to staging area
+git commit:: Commit staged files
+git status:: Shows tracked, untracked and staged files
+git diff:: Shows changes that have not yet staged, use --staged to show changes in stages files
+git rm:: Remove file from working directory, use --staged to remove from staging area
+git mv:: Moves or renames a file and automatically stage the change 
+git log:: Lists the commits made in a repository, [[git-log#Arguments|list of arguments]]

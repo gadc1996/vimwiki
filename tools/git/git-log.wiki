@@ -1,0 +1,53 @@
+= Git Log =
+List the commits made in that repository in reverse chronological order	
+
+	== Arguments ==
+	- patch:: Shows the difference introduced in each commit
+	- stat:: Prints below each commit a list of modified files, how many files changed, and how many lines where modified
+	- shortstat:: Display only changed/insertion/deletions line from stat command
+	- name-only:: Show the list of files modified after the commit information
+	- name-status:: Show the list of files affected with added/modified/deleted information
+	- abbrev-commit:: Show only the first few characters of the [[glosarry#SHA-1|SHA-1]]
+	- relative-date:: Display the date in relative format
+	- graph:: Display an ASCII graph with branch history 
+	- pretty:: changes the log output to [[#Pretty Formats|formats]] other than the default
+	- oneline:: Short for --pretty=oneline --abbrev-commit
+	
+	== Filters ==
+	- [N]:: Limits the number of outputs to N
+	- since, after:: Limits the commits based on a date, can use specific (2009-01-15) or relative (2 years 1 day ago) date
+	- until, before:: Limits the commits based on a date, can use specific (2009-01-15) or relative (2 years 1 day ago) date
+	- author:: Filter on a specific author
+	- commiter:: Filter on a specific commiter
+	- grep:: Filter on a specific keyword
+	- S:: Shows only commits that changed the number of occurences of a string
+	- [path/to/file]:: Limit the log output to commits that indtroduced changes to a file or directory
+	- no-merges:: Prevent the display of merge commits
+	
+	== Pretty Formats ==
+	- oneline
+	- short
+	- full
+	- fuller
+	- format:: Allows to specify your own log output format using [[#Format Specifiers|specifiers]]
+	
+	== Format Specifiers ==
+	| Specifier | Description               |
+	| %H        | Commit hash               |
+	| %h        | Abbreviated commit hash   |
+	| %T        | Tree hash                 |
+	| %t        | Abbreviated tree hash     |
+	| %P        | Parent hashes             |
+	| %p        | Abbreviated parent hashes |
+	| %an       | Author name               |
+	| %ae       | Author email              |
+	| %ad       | Author date               |
+	| %ar       | Author relative date      |
+	| %cn       | Commiter name             |
+	| %ce       | Commiter email            |
+	| %cd       | Commiter date             |
+	| %cr       | Commiter relative date    |
+	| %s        | Subject                   |
+	
+	The author is the person who originally wrote the work, the commiter is the person who 
+	last applied the work.
