@@ -1,5 +1,5 @@
-= My knowledge base =
-		* [[tools/index|Tools]] -- Awesome toys for the cool kids.
-		* [[linux/index|Linux]] -- All hail the penguin
+= Index =
+	- [[tools/index|Tools]] 
+	- [[linux/index|Linux]] 
  
 

@@ -1,4 +1,4 @@
 [[git]]
 [[vim/index|Vim]]
-[[vimwiki|VimWik]]
+[[vimwiki|VimWiki]]
 
