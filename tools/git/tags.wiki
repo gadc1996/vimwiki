@@ -1,0 +1,20 @@
+= Tags =
+Specifies a point in the repository history as important, typically used to mark release points
+Tags can be either:
+	1. Annotated:: Stores more information about the tag
+	2. lightweight:: Just stores the commit [[glossary#Checksum|checksum]], no other additional information
+
+`git tag`:: List existing tags
+			 :: Can use a [[../wildcard|widlcard pattern]] to filter tags
+			 :: -l or --list are required when using a [[../wildcard|widlcard pattern]]
+`git tag -a <tag> -m <description>`:: Create a new annotated tag
+`git tag -a <tag> <checksum>`:: Add a tag to <checksum> commit
+`git tag <tag>`:: Create a new lightweight tag
+`git show`:: Display Tag data
+`git push <remote> <tag>`:: git does not push tags automaticaly, push only one tag
+											 :: Use `git push <remote> --tags` to push all tags
+											 :: Use `git push <remote> --follow-tags` to push only annotated tags
+											 :: There is no command to push only lightweight tags
+`git tag -d <tag>`:: Delate local tag
+								:: Use `git push origin --deleta <tag>` to delate a remote tag
+

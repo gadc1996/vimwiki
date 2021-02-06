@@ -1,0 +1,7 @@
+= Glossary =
+	== Checksum ==
+	ID of a commits that use [[#SHA-1|SHA-1]]
+	
+	== SHA-1 ==
+	Mechanism that Git uses for checksumming, this is a 40-character string composed of hexadecimal 
+	characters and calculated based on the contents of a file or directory in the git structure.

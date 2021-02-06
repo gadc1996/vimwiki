@@ -1,0 +1,11 @@
+= Alias =
+Alias can be set on git using:
+`git config --global alias.<alias> '<command>'`
+
+	== Common Alias ==
+	- `git config --global alias.unstage 'reset HEAD --'`
+	- `git config --global alias.last 'log -1 HEAD'`
+
+	= External Commands =
+	Starting the command with ! will run an external command, for example:
+	`git config --global alias.visual '!gitk'`

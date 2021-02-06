@@ -1,0 +1,19 @@
+= Remotes =
+Remote repositories are versions of your project that are hosted on the Internet or a network
+somewhere
+
+`git remote`:: Lists the shortnames of eachspecified remote handle
+					:: `git remote -v` shows also the URLs that are store for every remote
+`git remote add <shortname> <url>`:: Add a new remote					
+`git fetch <shortname>`:: Fetch new data from <shortname> repository					
+										 :: Cloned repositories default <shortname> is origin
+										 :: Does not merge new changes
+`git pull`:: Fetch and merge new changes from <shorname> repository										 
+				:: From version 2.27 onward, pull.rebase variable has to be set or a warning will be given
+				:: `git config --global pull.rebase 'false'`, default behavior of git (fast-forward if possible)
+				:: `git config --global pull.rebase 'true'`, rebase when pulling
+`git push <shortname> <branch>`:: Push upstream changes to remote branch, needs newest version of working tree				
+`git remote show <shortname>`:: Show information about a particular remote
+`git remote rename <shortname> <new shortname>`:: Rename local and remote repositories
+`git remote remove <shortname>`:: Remove <shortname> remote
+														 :: Use `git remote rm` as shorthand

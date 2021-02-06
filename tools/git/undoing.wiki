@@ -1,0 +1,7 @@
+= Undoing Things =
+`git commit --amend`:: Replace last commit if some changes were forgotten
+`git reset HEAD <file>`:: Unstage a file, replaced with `git restore` from version 2.23.0
+`git checkout -- <file>`:: Replace file with the last commited version
+`git restore`:: Works only for version 2.23.0 onwards
+					 :: git restore <file> replaces git checkout <file>
+					 :: git restore --staged <file>
