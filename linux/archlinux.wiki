@@ -24,7 +24,7 @@
 				`iwctl station <device> get-networks`
 				
 			4. Connect to a network
-				`iwctl station <device> connect SSID`
+				`iwctl station <device> connect <SSID>`
 
 			5. Check connection
 				`ping google.com`
@@ -109,7 +109,7 @@
 			{{{
 				127.0.0.1	localhost
 				::1		localhost
-				127.0.1.1	myhostname.localdomain	myhostname
+				127.0.1.1	<hostname>.localdomain	<hostname>
 			}}}
 			
 		=== Configure users ===
@@ -145,7 +145,7 @@
 			`mount /dev/sda1 /boot/EFI`
 			
 		5. Install grub in a partition
-			`grub-install -target=x86_64-efi --bootloader-id=grub_uefi --recheck`
+			`grub-install --target=x86_64-efi --bootloader-id=grub_uefi --recheck`
 		
 		6. Make grub configuration file
 			`grub-mkconfig -o /boot/grub/grub.cfg`
@@ -157,9 +157,8 @@
 		2. Install git
 			`pacman -S git`
 
-		=== Enable Network manager ===
 		
-		Finish installation
+		=== Finish installation ===
 		1. Exit chroot
 			`exit`
 			
@@ -168,6 +167,7 @@
 			
 		3. Reboot
 			`reboot`
+
 	== Post-installation ==
 		=== Connecting to a network ===
 			==== Installing Network Manager ==== 
