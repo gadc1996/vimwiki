@@ -16,15 +16,25 @@
 
 	- Commands
 		- [[git/basic-commands|Basic Commands]]
+
 		- [[git/git-log|Git Log]]
-			-[[git/git-log#Arguments|Arguments]]
-			-[[git/git-log#Filters|Filters]]
-			-[[git/git-log#Pretty Formats|Pretty Formats]]
-			-[[git/git-log#Format Specifiers|Format Specifiers]]
+			- [[git/git-log#Arguments|Arguments]]
+			- [[git/git-log#Filters|Filters]]
+			- [[git/git-log#Pretty Formats|Pretty Formats]]
+			- [[git/git-log#Format Specifiers|Format Specifiers]]
+
 		- [[git/undoing|Undoing Things]]
+
 		- [[git/remotes|Remotes]]
+
+		- [[git/tags|Tags]]
+
+		- [[git/alias|Alias]]
+			- [[git/alias#Common Alias|Common Alias]]
+			- [[git/alias#External Commands|External Commands]]
 
 	- [[git/getting-help|Getting Help]] 
 
+	- [[git/glossary|Glossary]]
 
 	
