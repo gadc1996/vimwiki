@@ -9,18 +9,19 @@
 		- [[git/git#Sectionts|Sectionts]]
 		- [[git/git#Workflow|Workflow]]
 
-	- [[git/git-configuration|Git Configuration]]
+	- [[git/git-configuration|Configuration]]
 		- [[git/git-configuration#Setting Up Git For The First Time|Setting Up Git For The First Time]]
 
 	- [[git/gitignore|Git ignore]]
 
-	- Git Commands
+	- Commands
 		- [[git/basic-commands|Basic Commands]]
 		- [[git/git-log|Git Log]]
 			-[[git/git-log#Arguments|Arguments]]
 			-[[git/git-log#Filters|Filters]]
 			-[[git/git-log#Pretty Formats|Pretty Formats]]
 			-[[git/git-log#Format Specifiers|Format Specifiers]]
+		- [[git/undoing|Undoing Things]]
 
 	- [[git/getting-help|Getting Help]] 
 
