@@ -1,5 +1,6 @@
 = Index =
-	- [[tools/index|Tools]] 
-	- [[linux/index|Linux]] 
- 
+- [[git/index|Git]]
+- [[linux/index|Linux]]
+- [[vim/index|Vim]]
+- [[vimwiki/index|VimWiki]]
 

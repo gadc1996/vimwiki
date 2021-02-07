@@ -1,0 +1,51 @@
+= Grammar =
+	== Simple Commands ==
+	Is a sequence of optional variable assignments followed by blank-separated words and redirections
+	terminated by a control operator, The first word specifies the command to be executed and
+	is passed as argument zero, the remaining words are passed as arguments to the invoked command.
+	
+	== Pipelines ==
+	A pipeline is a sequence of one or more commands separated by `|` or `|&`.
+	
+	The format for pipelines is:
+		`<command1> | <command2>`
+		
+	Pipelines connect the `<command1>` stdout with the `<command2>` stdin, using `|&` connects
+	the std error in addition to the stdout of `<command1>` to `<command2>`.
+	
+	Pipelines return the exit status of the last command, this value is returned after all commands
+	in the pipeline is terminated.
+	
+	If the `time` reserved word precedes a pipeline, the elapsed time is reported as well.
+	
+	= Lists =
+	A list is a sequence of one or more pipelines separated by one of the following operators listed
+	by precedence:
+		- `&&`:: AND, `<command1> && <command2>`, execute `<command2>` if and only if `<command1>`
+					 return an exit status of zero.
+		- `||`:: OR, `<command1> || <command2>` execute `<command2>` if and only if `<command1>`
+		- 		 return a non-zero exit status.
+		- `;`:: Execute commands swquentially, the shell wait for every command to finish and the
+					Exit status is the one of the last command
+		- `&`:: Executes the command in the background, the shell does not wait for the command to 
+					finish and the exit status is 0.
+
+	== Compound Commands ==
+	`(<list>)`:: `<list>` is executed in a subshell, variable assignments and command that affect 
+						 the shell enviroment do not remain in the active shell.
+	`{ <list>; }`:: `<list>` is executed in the current shell enviroment.
+	`((<expression>))`:: `<expression>` is avaluated acording to the rules under arithmetic evaluation,
+										if the value of the expression is non-zero, the return is 0, otherwise the
+										return is 1.
+	[[ <expression> ]]:: Return a status of 0 or 1 depending on the evaluation of the conditional
+									expression `<expression>`
+	
+	== Binary Operators ==
+	!:: NOT, true if `<expression>` is false
+	`&&`:: AND, true if `<expression1` and `<expression2>` are true
+	`||`:: OR, true if `<expression1` or `<expression2>` is true
+	`==`:: Return 1 if `<string1>` is equal to `<string2>`
+	`!=`:: Return 1 if `<string>` is not equal to `<string2>`
+	`=~`:: Return 1 if `<regex>` matches `<string>`
+	
+	

@@ -1,4 +1,0 @@
-[[git]]
-[[vim/index|Vim]]
-[[vimwiki|VimWiki]]
-

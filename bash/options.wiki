@@ -1,0 +1,30 @@
+= Options =
+For readability the options are going to be listed only with the letter or word with wich is invoked,
+note that every option need to be invoked like this:
+	`bash -<single-character-option>`
+or:
+	`bash --<multi-character-option>`
+
+	c:: Commands are read from the first non-option argument command_string
+	i:: Interactive shell	
+	l:: Login shell
+	r:: Restricted shell
+	s:: Commands are read from the standard input
+	v:: Print shell input lines as they are read
+	x:: Print commands and their arguments as they are executed
+	D:: Print a list of all double-quoted strings proceded by $
+	--:: A -- signals the end of options, any argument after it is treated as filenames and arguments
+	debugger:: Execute debugger profile before the shell starts
+	dump-po-strings:: Equivalent to -D but the output is in the GNU gettext file format
+	dump-strings:: Equivalent to -D
+	help:: Display a usage message on standard output
+	init-file::
+	rcfile:: Execute commands from a file instead of `.bashrc`
+	login:: Equivalent to -l
+	noediting:: Do not use GNU readline to read commands when in interactive shell
+	noprofile:: Do not read any startup file
+	norc:: Do not read any configuration file
+	posix:: posix mode
+	restricted:: Equivalent to -r
+	verbose:: Equivalent to -v
+	version:: Print current bash version
