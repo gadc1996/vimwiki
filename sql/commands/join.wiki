@@ -1,0 +1,12 @@
+= JOIN =
+A JOIN clause is used to combine fields from two or more tables, based
+on related values between them.
+`SELECT orders.ordersID, custmer.costumerName FROM orders INNER JOIN customers ON orders.customerID=customer.customerID`
+
+== Type of JOINS ==
+- Inner join:: Return records that have matching values in both tables
+- Left join:: Return all the records from the left table and the matching values on the right table
+- right join:: Return all the records from the right table ant the matching values on the left table
+- Full join:: Returns all the records from both tables
+
+In the case of left, right and full join, no matching values will be set as null

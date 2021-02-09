@@ -1,0 +1,31 @@
+= Introduction =
+	== What is SQL? ==
+SQL(Structured Query Language) is a standard lenguaje for accessing and
+manipulating databases that became the ANSI standar in 1986
+
+	== What can SQL do? ==
+	- Execute queries 
+	- Retrive data from 
+	- Insert data in 
+	- Update data on 
+	- Delete data from 
+	- Create databases
+	- Create tables in databases
+	- Store procedures  
+	- Create views
+	- Set permissions
+
+	= RDBMS =
+	The Rational DataBase Management System is the basis of SQL.
+ 
+	The data in RDBMS is stored in objects called tables, a table is 
+	a collection of related data entries and consists of columns and rows.
+ 
+	Every table is broken into smaller entities called fields,
+	a field is a column in the table that is designed to maintain 
+	specific information about every record, rows are also called records.
+  
+	A database most contain one or more
+	tables, each of this tables is 
+	identified by a name
+	

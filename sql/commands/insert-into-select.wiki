@@ -1,0 +1,10 @@
+= INSERT INTO SELECT =
+The INSERT INTO SELECT command copies data from one table into another table.
+The data that is copied do not affect the data that is already on the table,
+to paste data into a new table use [[select-into|SELECT INTO]]
+
+Note: for INSERT INTO SELECT to works, data types from both source and target 
+table must match
+
+`INSERT INTO table1 SELECT * FROM table2`
+

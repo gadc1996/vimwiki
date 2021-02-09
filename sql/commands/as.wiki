@@ -1,0 +1,6 @@
+= AS =
+As gives an alias or a temporary name to a table or a field, oftern used
+to make things more human readable, the alias only exists for the duration of
+the query.
+`SELECT costumer-id AS id FROM costumers;`
+`SELECT costumer-id AS id, costumer-name AS name FROM costumers;`

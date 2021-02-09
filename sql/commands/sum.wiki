@@ -1,0 +1,6 @@
+= SUM =
+Return the sum of a specified field
+`SELECT SUM(price) FROM order-details`
+
+NOTE: NULL values are ignored
+

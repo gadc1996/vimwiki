@@ -1,0 +1,45 @@
+= Branching =
+Branching diverges a project from the main line of development and allows to continue working
+without messing up with the main line
+
+	== Commands ==
+	`git branch`:: Display a list of the current branches
+	`git branch --merged`:: Display branches that are merged with the current branch 
+	`git branch --no-merged`:: Display branches that are not merged with the current branch 
+	`git branch <branch>`:: Create a new brach with name `<branch>`
+	`git branch --move <old-name> <new-name>`:: Rename a local branch, it does not push to remote branch
+	`git push --set-upstream <remote> <new-name>`:: Rename a remote brach
+	`git push <remote> --delete <old-name>`:: Delete a remote branch
+	`git log --decorate`:: Shows where the branch pointer is pointing
+	`git log --oneline --decorate --graph -all`:: Show the history of commits, and where are pointer pointing 
+	`git chekout <branch>`:: Create a new branch `<branch>`.
+	`git chekout -b <branch>`:: Create a new branch and `<branch>` and switch to it.
+	`git chekout -d <branch>`:: Deletes branch `<branch>`.
+	`git switch`:: Replace git checkout from version 2.23.
+	
+	
+	== Merge ==
+	`git merge <branch>`:: Merges current branch with `<branch>`
+	`git status`:: If there is a merging problem, display wich files are conflicting
+	`git add`:: Stages the conficting files after the merging problem is resolved
+	`git commit`:: Finalize the merge commit after changes are staged
+	
+	== Remote Branches ==
+	`git push <remote> <branch>`:: Push local branch to remote server.
+	`git fetch --all`:: Fetch all changes on the server that are not yet in the local.
+	`git checkout -b <branch> <remote/branch>`:: Create a local `<branch>`, switch to it and marge `<remote/branch>`.
+																					 :: Shorthand for this command is `git checkout --track <remote/branch>`
+																					 :: Shorterhand for this command is `git checkout <remote branch>`
+																					 :: `<branch>` name can be different to the name of `<remote branch>`
+	`git branch -u <remote/branch>`:: Set or change upstream branch on a local branch.																					 
+`git branch --vv`:: Display tracking branches																					 
+`git push origin --delete <branch>`:: Delete remote branch.
+
+	== Rebase ==
+	Rebasing is a way of integrating branches, it takes the changes done on actual branch, and patching them on the common ancestor of the `<rebase target>`, then creating a new commit with the merging.
+	Do not rebase commits that exist remotely.
+	`git checkout <rebase branch>`:: It is important to be in the branch that is going to be rebased
+	`git rebase <target branch>`:: Rebase current branch on `<target branch>`.
+	`git rebase <target branch> <rebase branch>`:: Althoug it is importan to be in the the`<rebase branch>` when using the above command, both `<target branch>` and `<rebase branch>` can be specified.
+	`git rebase --onto <target branch> <topic branch>  <sub topic branch> `:: Rebase a `<sub topic branch>` on `<target branch>`
+	`git rebase <rebased branch/rebase branch>`:: When a rebase is done on a remote branch, this creates a merge conflict, this command rebase the local changes on `<rebased branch>`

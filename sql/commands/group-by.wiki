@@ -1,0 +1,4 @@
+ = GROUP BY =
+ The GROUP BY command groups rows that have the same value into a summary row
+ can be used for example, to find the number of people in each country
+ `SELECT COUNT(id), country FROM table GROUP BY country`

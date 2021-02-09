@@ -1,0 +1,35 @@
+= WHERE =
+WHERE is a clause used to filter records, it returns only those records that
+fulfill a specified condition.
+
+Specified conditions can be numeric or text, in case of a text condition, 
+is should use single quoting, numeric fields does not require quoting.
+
+= Logic Operators =
+- =:: Equal
+- >:: Greater than
+- <:: Less than
+- <=:: Less or equal
+- >=:: Greater or equal
+- <>:: Not equal
+- !=:: Not equal(Not available in all versions of SQL)
+- AND:: Display a record if condition1 and condition2 are true
+- OR:: Display a record if condition1 or condition2 are tru
+- NOT:: Display a record if condition is false
+- BETWEEN:: Between a range
+- LIKE:: Serch for a pattern
+- IN:: Specify multiple possible values for a column
+
+== Syntax ==
+`SELECT field1, field2 FROM table-name WHERE condition;`
+`SELECT field1, field2, FROM table-name WHERE condition1 AND condition2;`
+`SELECT field1, field2, FROM table-name WHERE condition1 OR condition2;`
+`SELECT field1, field2, FROM table-name WHERE NOT condition1;`
+`SELECT field1, field2, FROM table-name WHERE condition1 AND (condition2 OR condition3);`
+
+For example:
+`SELECT * FROM costumers WHERE country='Mexico'`
+`SELECT * FROM custumers WHERE city='Berlin' AND city='Munchen'`
+`SELECT * FROM custumers WHERE city='Berlin' OR city='Munchen'`
+`SELECT * FROM custumers WHERE NOT city='Berlin''`
+`SELECT * FROM custumers WHERE city='Berlin' AND (languaje='German' or languaje='English')`

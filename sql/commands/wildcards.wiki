@@ -1,0 +1,27 @@
+= Wildcards =
+Wildcard characters are use with the [[like]] operator to find a pattern in a
+field.
+
+| MS Access | My SQL | Description                                         |
+| *         | %      | Represents zero or more characters                  |
+| ?         | _      | Represents a single character                       |
+| []        | []     | Represent any value within the brackets             |
+| [!]       | [^]    | Represent any value that is not within the brackets |
+| -         | -      | Represents a range of numbers                       |
+| #         |        | Represents a single numberic character              |
+
+Note: MS Access wildcards are diferent from the MySQL wildcards, equivalent
+characters are listed above
+
+== Wildcard Examples ==
+a%:: Any value that starts with 'a'
+%a:: Any value that ends with 'a'
+%or%:: Any value that have 'or' in any position
+_a%:: Any value whose second character is 'a'
+a_%:: Any value that starts with an 'a' and have at least two characters
+a%o:: Anu value that starts with an 'a' and ends with an 'o'
+[asd]%:: Any value starting with 'a', 's' or 'd'
+%[asd]:: Any value ending with 'a', 's' or 'd'
+%[asd]%:: Any value containing 'a', 's' or 'd'
+[a-d]%:: Any value starting with a value between 'a' and 'd' 
+[^a]%:: Any value not starting with 'a'

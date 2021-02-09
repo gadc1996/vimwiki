@@ -1,0 +1,25 @@
+= Shell =
+A shell is a macro processor that executes commands, the term macro proccessor means
+functionality where text and symbols are expanded to create larger expressions.
+
+A unix shell is both a command interpreter(provides the user interface to GNU utilities) and
+a programming language(features and utilities can be combined in a script).
+
+Shell can be:
+	- Interactive:: Accepts input typed from the keyboard
+	- Non-interactive:: Commands are run from a script
+
+As any other language, shell provides:
+	- Variables
+	- Flow control
+	- Quoting
+	- Functions
+
+Shell provides additional features such as:
+	- Buit-in commands
+	- Job control
+	- Command line editing
+	- Command history
+	- Aliases
+
+	

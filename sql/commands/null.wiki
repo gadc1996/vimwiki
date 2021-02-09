@@ -1,0 +1,10 @@
+= NULL =
+Null values represent an empty value (not zero), this can be use to create
+a new field without inserting a value on it, or when a field is created,
+default value will be NULL.
+
+NULL cannot be tested using logical operators, so special IS NULL and 
+IS NOT NULL operators are provided.
+
+`SELECT * FROM costumers WHERE address IS NULL`
+`SELECT * FROM costumers WHERE email IS NOT NULL`

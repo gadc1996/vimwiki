@@ -1,0 +1,15 @@
+= LIKE =
+Search for a specified pattern in a field, using two basic wildcards:
+	- % :: Any number of characters
+	- _ :: A single character
+`SELECT * FROM costumers WHERE name LIKE 'a%'`
+
+== Wildcard examples ==
+a%:: Any value that starts with 'a'
+%a:: Any value that ends with 'a'
+%or%:: Any value that have 'or' in any position
+_a%:: Any value whose second character is 'a'
+a_%:: Any value that starts with an 'a' and have at least two characters
+a%o:: Anu value that starts with an 'a' and ends with an 'o'
+
+More information on [[wildcards|Wildcard]]

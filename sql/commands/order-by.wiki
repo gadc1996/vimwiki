@@ -1,0 +1,16 @@
+= ORDER BY =
+This keyword is used to sort the result-set in ascending or descending order,
+it will sort in ascending order by default, to sort in descending order use
+the DESC keyword after the field that is use for the sorting.
+
+Adding extra fields will sort rows with duplicated values by a second field
+For example:
+`SELECT * FROM costumers ORDER BY country, city`
+If two rows have the same country, they will be sorted then by city
+
+Different fields can have different sorting order, for example:
+`SELECT * FROM costumers ORDER BY country DESC, city ASC`
+
+== Syntax ==
+`SELECT * FROM costumers ORDER BY country DESC`
+`SELECT * FROM costumers ORDER BY country`

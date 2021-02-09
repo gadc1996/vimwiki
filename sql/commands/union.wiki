@@ -1,0 +1,12 @@
+= UNION =
+The union operator is used to combine the result-set of two or more select
+comands.
+`SELECT field FROM table1 UNION SELECT field FROM table2`
+
+For the union command to work:
+	- Each SELECT command must have the same number of fields
+	- The fields must have similar data type
+	- The fields must be in the same order
+
+By default UNION will ignore duplicate values, to show all values including
+duplicates use `UNION ALL`

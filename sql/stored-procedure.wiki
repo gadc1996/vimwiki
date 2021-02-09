@@ -1,0 +1,37 @@
+= Stored Procedure =
+A stored procedure is prepered SQL code that can be used over and over again,
+Stored procedures can receive parameters, so when the procedure is called,
+the value will depend on the value of the parameters
+
+== Syntax ==
+Procedures can be created using the following syntax:
+{{{
+
+	CREATE PROCEDURE procedureName
+	AS
+	statement1
+	statement2
+	statement3
+	GO;
+
+	}}}
+	
+Once created, procedures can be executed with the EXEC command:
+`EXEC procedureName`
+
+
+= Parameters =
+Parameters can be passed to a procedure using:
+{{{
+
+	CREATE PROCEDURE procedureName @parameter1 nvarchar(30), @parameter2 nvarchar(10)
+	AS
+	statement1
+	statement2
+	statement3
+	GO;
+
+	}}}
+	
+Then, procedures can recibe parameters when executed using:
+`EXEC procedureName @parameter1='parameter' @parameter2='parameter'`

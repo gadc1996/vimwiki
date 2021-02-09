@@ -1,0 +1,18 @@
+= SHH =
+SSH or Secure Shell is a remote administrtion protocol that allows users to control and modify their remote
+servers over the internet
+
+	= Usage =
+	`ssh <user>@<host>`
+	This command instructs the system to open an ncrypted secure shell connection, `<user>`
+	repressents the account to be accesed, `<host>` represents the IP address. 
+	
+	First of all, ssh keys are required, check if there is any in your computer with:
+	`ls ~/.ssh`
+	
+	This files usually are name:
+	- `id_rsa`
+	- `id_rsa.pub`
+
+	To generate new keys use:
+	`ssh-keygen -t rsa -C "your@email.com""`

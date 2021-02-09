@@ -1,0 +1,4 @@
+= Bash =
+Bash is the shell, or command language interpreter for the GNU operating system,
+the name is an acronym for 'Bourne-Again SHell'.
+

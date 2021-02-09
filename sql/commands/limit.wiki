@@ -1,0 +1,4 @@
+= LIMIT =
+Limits the maximum number of results that are going to be returned, usefull
+when working with large sets of data.
+`SELECT * FROM costumers LIMIT 3;`

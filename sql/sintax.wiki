@@ -1,0 +1,16 @@
+= Syntax =
+- SQL is not case sensitive
+- Some SQL require a semicolon after each statement
+
+	== Basic Commands ==
+	- SELECT:: Extract data
+	- UPDATE:: Update data
+	- DELETE:: Delete data
+	- INSERT INTO:: Insert data into a database
+	- CREATE DATABASE:: Create a new database
+	- ALTER DATABASE:: Modify a database
+	- CREATE TABLE:: Create a new table
+	- ALTER TABLE:: Modigy a table
+	- DROP TABLE:: Deleta a table
+	- CREATE INDEX:: Create a search key
+	- DROP INDEX:: Deleta a search key

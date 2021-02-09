@@ -1,0 +1,4 @@
+= HAVING =
+The HAVING command is the equivalent of [[where|WHERE]] when used with aggregate 
+functions, [[group-by|GROUP BY]] for example.
+ `SELECT COUNT(id), country FROM table GROUP BY country HAVING COUNT(customer ID) > 5;`

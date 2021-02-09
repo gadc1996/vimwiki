@@ -1,40 +1,40 @@
 = Index =
-	-  [[git/getting-started|Getting Started]]
-		- [[git/getting-started#Version Control|Version Control]]
-		- [[git/getting-started#Version Constrol Systems|Version Constrol Systems]] 
+	-  [[getting-started|Getting Started]]
+		- [[getting-started#Version Control|Version Control]]
+		- [[getting-started#Version Constrol Systems|Version Constrol Systems]] 
 
-	- [[git/git|Git]]
-		- [[git/git#Advantages|Advantages]]
+	- [[git|Git]]
+		- [[git#Advantages|Advantages]]
 		- [[git/git#States|States]]
-		- [[git/git#Sectionts|Sectionts]]
-		- [[git/git#Workflow|Workflow]]
+		- [[git#Sectionts|Sectionts]]
+		- [[git#Workflow|Workflow]]
 
-	- [[git/git-configuration|Configuration]]
-		- [[git/git-configuration#Setting Up Git For The First Time|Setting Up Git For The First Time]]
+	- [[git-configuration|Configuration]]
+		- [[git-configuration#Setting Up Git For The First Time|Setting Up Git For The First Time]]
 
-	- [[git/gitignore|Git ignore]]
+	- [[gitignore|Git ignore]]
 
 	- Commands
-		- [[git/basic-commands|Basic Commands]]
+		- [[basic-commands|Basic Commands]]
+		- [[git-log|Git Log]]
+			- [[git-log#Arguments|Arguments]]
+			- [[git-log#Filters|Filters]]
+			- [[git-log#Pretty Formats|Pretty Formats]]
+			- [[git-log#Format Specifiers|Format Specifiers]]
+		- [[undoing|Undoing Things]]
+		- [[remotes|Remotes]]
+		- [[tags|Tags]]
+		- [[alias|Alias]]
+			- [[alias#Common Alias|Common Alias]]
+			- [[alias#External Commands|External Commands]]
 
-		- [[git/git-log|Git Log]]
-			- [[git/git-log#Arguments|Arguments]]
-			- [[git/git-log#Filters|Filters]]
-			- [[git/git-log#Pretty Formats|Pretty Formats]]
-			- [[git/git-log#Format Specifiers|Format Specifiers]]
+	- [[branching|Branching]]
+		- [[branching#Commands|Commands]]
+		- [[branching#Merge|Merge]]
+		- [[branching#Remote Branches|Remote Branches]]
 
-		- [[git/undoing|Undoing Things]]
+	- [[getting-help|Getting Help]] 
 
-		- [[git/remotes|Remotes]]
-
-		- [[git/tags|Tags]]
-
-		- [[git/alias|Alias]]
-			- [[git/alias#Common Alias|Common Alias]]
-			- [[git/alias#External Commands|External Commands]]
-
-	- [[git/getting-help|Getting Help]] 
-
-	- [[git/glossary|Glossary]]
+	- [[glossary|Glossary]]
 
 	

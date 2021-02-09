@@ -1,0 +1,10 @@
+= SELECT INTO =
+The SELECT INTO command copies data from one table into a new table
+`SELECT * INTO customers-backup FROM costumers`
+
+Note: This will overwrite data if new table exists, to add data from one
+table to another use [[insert-into-select|INSERT INTO SELECT]]
+
+== Copying the structure of a table ==
+The following command will copy only the structure of a table with no data on it
+`SELECT * INTO customers-backup FROM costumers WHERE 1=0`

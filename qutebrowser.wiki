@@ -1,0 +1,31 @@
+= QuteBrowser =
+	== Basic Keybindings ==
+	- j:: Move down
+	- k:: Move up
+	- h:: Move left
+	- l:: Move right
+	
+	== URLs ==
+	- o:: Open new url
+	- O:: Open new url in a new tab
+	- go:: Edit current url
+
+	== Tabs ==
+	- J:: Next tab
+	- K:: Previous tab
+	- Alt+n:: Switch to the nth tab 
+	- d:: Close tab
+	- u:: Undo closing tab
+
+	== History ==
+	- H:: Go back in history
+	- L:: Go forth in history
+
+	== Miscellanaeous ==
+	- f:: Display hints
+	- ::: Display commandline
+
+	== Searching ==
+	- /:: Search
+	- n:: Next search result
+	- N:: Previous search result

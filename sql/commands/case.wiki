@@ -1,0 +1,14 @@
+CASE
+The equivalent to a switch-case in other programming languages, the query will
+search for the first condition that is met, once that condition is true it
+will stop reading and return the result, in case that no condition is met, 
+the ELSE clasuse will be executed
+{{{
+CASE
+	WHEN condition1 THEN result1
+	WHEN condition2 THEN result2
+	WHEN condition3 THEN result3
+	ELSE result
+END;	
+	}}}
+	

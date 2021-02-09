@@ -1,0 +1,8 @@
+= ANY and ALL =
+The ANY and ALL operators are use with a WHERE or HAVING clause.
+The ANY operator returns true if any of the subquery values meet the condition.
+The ALL operator returns true if all of the subquery values meet the condition.
+`SELECT field FROM table WHERE field operator ANY(SELECT field FROM table WHERE condition)`
+`SELECT field FROM table WHERE field operator ALL(SELECT field FROM table WHERE condition)`
+
+Note: The operator must be a standard comparation operator(Not Word operators)

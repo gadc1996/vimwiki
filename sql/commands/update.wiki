@@ -1,0 +1,8 @@
+= UPDATE =
+The UPDATE command is used to modify existing values in a table.
+SET command is used to specify the values that are going to be modified.
+
+`UPDATE table_name SET name='Albert', city='London' WHERE id='1'`
+
+Be carefull when updating data, if no WHERE condition is provided, all the
+table will be overwriten

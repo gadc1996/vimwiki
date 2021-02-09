@@ -1,5 +1,11 @@
 = Index =
+	- [[bash|Bash]]
+
+	-	[[shell|Shell]] 
+		-[[shell-syntax|Syntax]]
+			- [[shell-syntax#Quoting|Quoting]]
 	- [[options|Options]]
 	- [[reserved-words|Reserverd Words]]
 	- [[grammar|Grammar]]
 
+	- [[glossary|Glossary]]

@@ -1,0 +1,4 @@
+= MIN and MAX =
+MIN and MAX return the minimun and the maximun value of a selected colum.
+`SELECT MAX(price) FROM products`
+`SELECT MIN(price) FROM products`

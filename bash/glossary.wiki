@@ -1,0 +1,83 @@
+= Glossary =
+	== Blank ==
+	A space or tab character.
+	
+	== Builtin ==
+	A coomand that is implementd internally by the shell.
+	
+	== Control Operator ==
+	A token that performs a control function, tokens are::
+		- `newline`
+		- `||`
+		- `&&`
+		- `&`
+		- `;`
+		- `;;`
+		- `;&`
+		- `;;&`
+		- `|`
+		- `|&`
+		- `(`
+		- `)`
+
+	== Exit Status ==
+	The value returned by a command to its caller, maximum value is 255.
+	
+	= Field =
+	A unit of text that ir the result of one of the shell expansions.
+	
+	== Filename ==
+	A string used to identify a file.
+	
+	== Job ==
+	A set of processes comprising a pipeline, and any processes descended from it.
+	
+	== Job Control ==
+	A mechanism by which users can selectively stop and restart execurion of processes
+	
+	== Metacharacters ==
+	A character that separate words when unquoted, metacharacters are:
+		- `space`
+		- `tab`
+		- `newline`
+		- `|`
+		- `&`
+		- `;`
+		- `(`
+		- `)`
+		- `<`
+		- `>`
+
+	== Name ==
+	A word consisting solely of letters, number and underscores, beggining with a letter or
+	underscore, also known as identifiers
+	
+	== Operator ==
+	A control operator or a redirection operator
+	
+	== POSIX ==
+	A family of open system standars based on Unix
+	
+	== Process Group ==
+	A collection of related processes each having the same process group ID
+	
+	== Process Group ID ==
+	A unique identifier that represents a process group during its lifetime
+	
+	== Reserved Word ==
+	A word that has a special meaning to shell
+	
+	== Return Status ==
+	Synonym for exit status
+	
+	== Signal ==
+	A mechanism by which a process may be notified by the kernel of an event occurring in the system
+	
+	== Special Builtin ==
+	A shell builtin command that has been classified as special by the POSIX standard
+	
+	 == Token ==
+	A sequence of characters considered a single unit by the shell
+	
+	== Word ==
+	A sequence of characters treated as a unit by the shell

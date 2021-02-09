@@ -1,0 +1,5 @@
+= AVG =
+Returns the avarage value of a specified field
+`SELECT AVG(price) FROM products`
+
+NOTE: NULL values are ignored

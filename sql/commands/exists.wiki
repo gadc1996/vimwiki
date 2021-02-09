@@ -1,0 +1,3 @@
+= EXISTS =
+The EXISTS operator is used to test for the existence of any record in a query
+`SELECT field FROM table WHERE EXISTS(SELECT field FROM table WHERE condition)`

@@ -1,0 +1,6 @@
+= COUNT =
+Return the count of a given query.
+`SELECT COUNT(contry) FROM customers;`
+`SELECT COUNT(DISTINCT contry) FROM customers;`
+
+NOTE: NULL values are ignored

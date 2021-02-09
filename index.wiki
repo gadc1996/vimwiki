@@ -1,6 +1,11 @@
 = Index =
+- [[bash/index|Bash]]
 - [[git/index|Git]]
 - [[linux/index|Linux]]
+- [[SSH]]
+- [[sql/index|SQL]]
 - [[vim/index|Vim]]
 - [[vimwiki/index|VimWiki]]
+- [[qutebrowser|QuteBrowser]]
+- 
 

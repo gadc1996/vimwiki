@@ -1,0 +1,9 @@
+= Shell Syntax =
+	= Quoting =
+	Quoting is used to remove the special meaning of certain characters or words to the shell,
+	There are three quoting mechanism:
+		
+		- `\`:: Escape character, it preserves the literal valur of the next character that follows
+		- `''`:: Single quotes, it preserves the literal value of each character within the quote
+		- `""`:: Double quotes, it preserves the litarel value of each character within the quote
+					Except `$`, `''` and `\` 

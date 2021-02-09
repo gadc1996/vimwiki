@@ -1,0 +1,6 @@
+= SELECT =
+The SELECT command is used to retrive data from a database, this data is 
+stored in a result table called the result-set.
+
+`SELECT field1, field2, FROM table-name;`
+`SELECT * FROM table-name`

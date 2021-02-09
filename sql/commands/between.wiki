@@ -1,0 +1,6 @@
+= BETWEEN =
+The BETWEEN command selects a value within a given range, the values can be
+numbers, text or dates, begin and end values are included.
+`SELECT * FROM products WHERE price BETWEEN 10 AND 20;`
+`SELECT * FROM products WHERE price NOT BETWEEN 10 AND 20;`
+`SELECT * FROM orders WHERE date BETWEEN 10/01/2020 AND 20/01/2020;`

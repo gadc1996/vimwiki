@@ -1,0 +1,16 @@
+= IFNULL =
+Returns a value in case that the value is NULL, is usefull when making
+math operations with fields that can be NULL, for example:
+`SELECT price * (unitsInStock + unitsInOrder)`
+
+If unitsInOrder is NULL then all the operation will be NULL, this can be 
+fixed using:
+`SELECT price * (unitsInStock + IFNULL(unitsInOrder, 0));`
+
+In this case if unitsInOrder is NULL it will be replaced by 0.
+
+IFNULL can be found in other SQL systems with another name, this functions
+will be listed below.
+| Function | System                |
+| ISNULL   | MS Access, SQL Server |
+| NVL      | Oracle                |

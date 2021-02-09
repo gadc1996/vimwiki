@@ -1,0 +1,8 @@
+= INSERT INTO =
+This command writes a new record in a table
+`INSERT INTO table-name VALUES (value1, value2, value3);`
+Note that this command will insert values in the same order as they are passed
+
+Fields where values are going to be inserted can be specified:
+`INSERT INTO table-name(field1, field2) VALUES (value1, value2);`
+

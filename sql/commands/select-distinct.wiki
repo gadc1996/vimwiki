@@ -1,0 +1,7 @@
+= SELECT DISTINCT =
+The SELECT DISTINCT command is used to return only different values, 
+this means, values that are not duplicated, this can be use for example,
+retriving a city or country field, in this cases, the resulting table will
+contain each country or city in the database without duplicating valued
+
+`SELECT DISTINCT country FROM custumers;`

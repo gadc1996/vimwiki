@@ -1,0 +1,6 @@
+= Comments =
+Comments are used to explain sections of code, or to prevent code from running
+Code can be commented using:
+	- `--`:: Single line comments, will ignore code after it until the end of line
+	- `/**/`:: Multi line comments, will ignore code that is within `/*` and `*/`
+
