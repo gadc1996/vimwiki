@@ -1,0 +1,3 @@
+= Internet =
+	- [[how-the-internet-work|How Does The Internet Works?]]
+		- [[how-the-internet-work#The internet VS the web|The internet VS the web]]

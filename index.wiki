@@ -1,6 +1,7 @@
 = Index =
 - [[bash/index|Bash]]
 - [[git/index|Git]]
+- [[internet/index|Internet]]
 - [[linux/index|Linux]]
 - [[SSH]]
 - [[sql/index|SQL]]

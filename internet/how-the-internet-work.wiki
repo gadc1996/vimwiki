@@ -1,0 +1,23 @@
+= How Does The Internet Works? =
+The internet is the infrascructure of the web, at the most basic, the internet is a large network of computers wich communicate all together. 
+
+Computers can communicate either pshysically or wirelessly, this communication is not limited to two computers, several computer can be linked together, but this gets complicated quickly, as to connect 10 computers, there would be needed 45 cables and 9 plugs on each computer.
+
+To solve this problem a computer is connected to a special tiny computer called a _router_, whose main job is to receive a message and ensure that it is given to the right computer, this solves the last problem since now only 10 cables and 10 plus are needed.
+
+Now, cables cannot be plug on a single router infinetly, also, that is not convinient, because if all computers in the world were connected to a single router, it will all crash if this single router fails.
+
+This problem can be solved using the same method as before, since a router is computer, other routers can be connected to it, even more, this router can be connected to another router that instead of connecting computers connects routers.
+
+This is almost how the internet works, since it would be to expensive to install dedicated internet connections in every house, the telephone infrastructure is used (Since there is already a telephone network in every house), but in order to used this network a special piece of equipment named _modem_ is needed.
+
+This _modem_ turns the information from our _router_ into information manageable by the telephone infrastructure and vice versa.
+
+Once in the telephone network, the information is send to an ISP(_Internet Service Provider_), An ISP is a company that manages special _routers_ that are linked togheter and can communicate with other ISPs' routers, thus, sending information to the corresponding destination.
+
+To send a message to a computer, we must specify which one, thus, special addreses known as IP(_Internet Protocol_) are used to identify every computer on a network, IPs are made of a series of four numbers between 0 and 255 separated by dots, for example: `173.194.121.32`
+
+Using IP addresses is perfectly fine for computers, but it would be not so easy for humans to remember a bunch of IPs, so, to make things easier, aliases know as domain name are used.
+ 
+== The internet VS the web == 
+It is important to note that the internet and the web are not the same thing, the internet is an infrastructure used to communicate or link computers with one another, some of these computers are called _web servers_, this _web servers_ can send information that is understandable by web browsers, so, the web is only a service (among many others) that is built on top of the internet.
