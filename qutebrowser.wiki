@@ -28,4 +28,4 @@
 	== Searching ==
 	- /:: Search
 	- n:: Next search result
-	- N:: Previous search result
+ 	- N:: Previous search result

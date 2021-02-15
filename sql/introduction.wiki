@@ -1,31 +1,53 @@
 = Introduction =
-	== What is SQL? ==
-SQL(Structured Query Language) is a standard lenguaje for accessing and
-manipulating databases that became the ANSI standar in 1986
+== Databases ==
+A database is any way of storing pieces of information that is related one another, databases can be writen on:
+	- A computer
+	- A piece of paper
+	- An excel sheet // Not a good idea
+	- Remembering the database	 	
 
-	== What can SQL do? ==
+Also, databases can be either relational or non-relational.
+
+=== Relational databases ===
+Is any databased that is structured in the form of a table, where each row represent an instance with as much fields as columns, for example:
+| ID | Name     | Mail         |
+| 1  | Jonh Doe | jonh@doe.com |
+| 2  | Jane Doe | jane@doe.com |
+
+=== Non-relational databases ===
+Is any databased that is not structured in the form of a table, some examples of non-relational databases are:
+	- JSON 
+	- Graphics	
+	- Key-Value pairs	
+
+== What is SQL? ==
+SQL(Structured Query Language) is a standard lenguaje for accessing and manipulating databases that became the ANSI standar in 1986
+
+== What can SQL do? ==
 	- Execute queries 
-	- Retrive data from 
-	- Insert data in 
-	- Update data on 
-	- Delete data from 
+	- Retrive data  
+	- Insert data  
+	- Update data  
+	- Delete data  
 	- Create databases
 	- Create tables in databases
 	- Store procedures  
 	- Create views
 	- Set permissions
+	- 
+== DBMS ==
+A DataBAse Management System(DBMS) is any piece of software that using SQL allows the user to create, manipulate and maintain databases, some popular DBMS are:
+	- MySQL
+	- MariaDB
+	- MongoDB
+	- Oracle
 
-	= RDBMS =
-	The Rational DataBase Management System is the basis of SQL.
+== RDBMS ==
+The data in RDBMS is stored in objects called tables, a table is a collection of related data entries and consists of columns and rows.
  
-	The data in RDBMS is stored in objects called tables, a table is 
-	a collection of related data entries and consists of columns and rows.
- 
-	Every table is broken into smaller entities called fields,
-	a field is a column in the table that is designed to maintain 
-	specific information about every record, rows are also called records.
-  
-	A database most contain one or more
-	tables, each of this tables is 
-	identified by a name
+Every table is broken into smaller entities called fields, a field is a column in the table that is designed to maintain specific information about every record, rows are also called records.
+
+A database most contain one or moretables, each of this tables is identified by a name
+
+
 	

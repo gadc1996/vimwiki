@@ -1,0 +1,5 @@
+= DROP DATABASE =
+Deletes an existing database.
+`DROP DATABASE databaseName`
+
+Note: there is no confirmation on deleting a database nor a way to undo it, so be careful.

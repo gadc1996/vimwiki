@@ -1,0 +1,8 @@
+= BACKUP DATABASE =
+Creates a full back up of an existing SQL database.
+
+`BACKUP DATABASE dabaseName TO DISK = 'path/to/file';`
+
+== DIFFERENTIAL ==
+Adding a DIFFERENTIAL statement will only back up the parts of the database that have been modified since the last full backup
+`BACKUP DATABASE databaseName TO DISK = 'file/to/path' WITH DIFFERENTIAL;`

@@ -1,0 +1,34 @@
+= Data Types =
+== Strings ==
+| Data Type             | Description                                                                                                                             |
+| CHAR(size)            | A fixed length string, size can be from 0 to 255, default is 1                                                                          |
+| VARCAR(size)          | A variable length string, size can be from 0 to 65535                                                                                   |
+| BINARY(size)          | A fixed length binary byte string                                                                                                       |
+| VARBINARY(size)       | A variable length binary byte string                                                                                                    |
+| TYNYTEXT              | A string with a maximum of 255 characters                                                                                               |
+| TYNYBLOB              | BLOB(Binary Large OBject). Stores up to 255 bytes                                                                                       |
+| TEXT(size)            | A string with a maximub length of 65,535 bytes                                                                                          |
+| BLOB(size)            | BLOB(Binary Large OBject). Stores up to 65,535 bytes                                                                                    |
+| MEDIUMTEXT            | A string with a maximum length of 16,777,215 characters                                                                                 |
+| MEDIUMBLOB            | BLOB(Binary Large OBject). Stores up to 16777215 bytes                                                                                  |
+| LONGTEXT              | A string with a maximun length of 4,294,967,295 characters                                                                              |
+| LONGBLOB              | BLOB(Binary Large OBject). Stores up to 4,294,967,295 bytes                                                                             |
+| ENUM(val1, val2, ...) | A string object that can only have specified values, if a different value is entered, it will be ignored, up to 65535 values can listed |
+| SET(val1, val2, ...)  | A string object that can have 0 or more values, up to 64 values cab be set in a list                                                    |
+
+== Numeric ==
+| Data Type                 | Description                                                                 |
+| BIT(size)                 | Stores up to 64 bits                                                        |
+| TYNYINT(size)             | An integer between -128 to 127 for the signed and 0 to 255 for the unsigned |
+| BOOL                      | True for nonzero values and false for zero                                  |
+| BOOLEAN                   | Equal to BOOL                                                               |
+| MEDIUMINT(size)           |                                                                             |
+| INT(size)                 |                                                                             |
+| INTEGER(size)             |                                                                             |
+| BIGINT(size)              |                                                                             |
+| FLOAT(size, d)            |                                                                             |
+| FLOAT(p)                  |                                                                             |
+| DOUBLE(size, d)           |                                                                             |
+| DOUBLE PRECISION(size, d) |                                                                             |
+| DECIMAL(size, d)          |                                                                             |
+| DEC(size, d)              |                                                                             |

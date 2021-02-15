@@ -1,0 +1,5 @@
+= Database Commands =
+	- [[backup|BACKUP DATABASE]]
+	- [[create|CREATE]]
+	- [[create-table|CREATE TABLE]]
+	- [[drop|DROP]]

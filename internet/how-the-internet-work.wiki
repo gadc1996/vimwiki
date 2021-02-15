@@ -67,11 +67,10 @@ Lines with an `* * *` output means that the router at that hop does not respond 
 == The internet VS the web == 
 It is important to note that the internet and the web are not the same thing, the internet is an infrastructure used to communicate or link computers with one another, some of these computers are called _web servers_, this _web servers_ can send information that is understandable by web browsers, so, the web is only a service (among many others) that is built on top of the internet.
 
-Resources 
+== Resources == 
 [[https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_internet_work|MDNHow does the internet work]]
 [[https://www.howtogeek.com/341866/how-does-the-internet-work|How To Geek - How does the internet work]]
 [[https://en/wikipedia.org/wiki/Hop_(networking)|Wikipedia - Hop]]
-
 [[https://en.wikipedia.com/Sonar|Wikipedia - Sonar]]
 [[https://www.techwaalla.com/articles/how-to-read-a traceroute| Techwalla - How to read a traceroute]]
 [[https://serverfault.com/a/334034 | Serverfault - what does mean when traceroute]]

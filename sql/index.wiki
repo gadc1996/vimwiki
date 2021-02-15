@@ -1,6 +1,13 @@
 = Index =
 	- [[introduction|Introduction]]
-	- [[sintax|Syntax]]
-	-	[[commands/index|Commands]]	 
-	- [[stored-procedure|Stored Procedure]]
-	- [[comments|Comments]]
+	- [[glossary|Glossary]]
+
+	- SQL
+		- [[sintax|Syntax]]
+		-	[[commands/index|Commands]]	 
+		- [[stored-procedure|Stored Procedure]]
+		- [[comments|Comments]]
+		- [[example|Examples]]
+		- [[er-diagrams|ER Diagrams]]
+
+	- [[databases/index/Database Commands]]

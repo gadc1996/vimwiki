@@ -1,0 +1,38 @@
+= Examples =
+== Queries ==
+From The DataBase find:
+	- All employees
+	- All Clients
+	- All employees ordered by salary
+	- All employees ordereb by sex then name
+	- The first 5 employees from the table
+	- The first and last name of all employee
+	- The forename and surenames of all employee
+	- All the different branch suppliers
+	- The number of employees
+	- The number of employees with a supervisor
+	- The number of femele employees born after 1971
+	- The avarage of all employee's salaries
+	- The sum of all employee's salaries
+	- How many males and females there are
+	- The total sales of every salesman
+	- How much spend each client
+	- Any client that is an LLC
+	- Any supplier that are in the label bussines
+	- Any employee born in october
+	- All clients that are school
+
+== Union ==
+From The DataBase find:
+	- A list of employee and brach names
+	- A list of clients and suppliers
+	- A list of all money spent or earned the company
+
+== Joins ==
+From The Database find:
+	- All branches and the name of their manage
+
+== Nested Queries ==
+From The DataBase find:
+	- names of all the employees that sold more than 30,000 to a sigle client
+	- All the clients who are handled by the branch Michael Scott manages, Assume you know Michael's D

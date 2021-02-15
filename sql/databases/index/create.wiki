@@ -1,0 +1,5 @@
+= CREATE DATABASE =
+Create a new database
+`CREATE DATABASE databaseName`
+
+Note: admin privileges are needed in order to create a new database.

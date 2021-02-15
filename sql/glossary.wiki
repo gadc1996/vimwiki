@@ -1,0 +1,15 @@
+= Glossary =
+== Composite Key ==
+Is a [[#Primary Key|primary key]] made up of two or more rows or fields, this allow to use duplicated values in one of the rows while identifing it with the other column.
+
+== Foreign Key ==
+Is the [[#Primary Key|primary key]] of a table used to link information between tables, used to reduce size of each table.
+
+== Natural Key ==
+Is a [[#Primary Key|primary key]] that has a meaning in the real world, for example, using the SSN or the mail of a person to identify it.
+
+== Primary Key ==
+Is an unique identifier used in a table to refer to a row, Primary keys can be either [[#Natural Key|natural]] or [[#Surrogate Key|surrogate]] keys
+
+== Surrogate Key ==
+Is a [[#Primary Key|primary key]] without a meaning in the real world, for example, an incremental ID number whose sole porpouse is to identify a row.

@@ -2,13 +2,13 @@
 Wildcard characters are use with the [[like]] operator to find a pattern in a
 field.
 
-| MS Access | My SQL | Description                                         |
-| *         | %      | Represents zero or more characters                  |
-| ?         | _      | Represents a single character                       |
-| []        | []     | Represent any value within the brackets             |
-| [!]       | [^]    | Represent any value that is not within the brackets |
-| -         | -      | Represents a range of numbers                       |
-| #         |        | Represents a single numberic character              |
+| MS Access | MySQL | Description                                         |
+| *         | %     | Represents zero or more characters                  |
+| ?         | _     | Represents a single character                       |
+| []        | []    | Represent any value within the brackets             |
+| [!]       | [^]   | Represent any value that is not within the brackets |
+| -         | -     | Represents a range of numbers                       |
+| #         |       | Represents a single numberic character              |
 
 Note: MS Access wildcards are diferent from the MySQL wildcards, equivalent
 characters are listed above
