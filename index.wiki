@@ -9,5 +9,5 @@
 - [[vimwiki/index|VimWiki]]
 - [[pass/index|Pass]]
 - [[qutebrowser|QuteBrowser]]
-- 
+- [[hardware/index|Hardware]] 
 

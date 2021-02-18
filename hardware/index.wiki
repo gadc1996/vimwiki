@@ -1,0 +1,50 @@
+= Hardware =
+The hardware layer in computers refers to any component that you can actually hold in your hand, common hardware includes:
+	- Monitor
+	- Mouse
+	- Keyboard
+	
+== More Hardware ==	
+	- CPU:: The central processing unit is the brain of the computer, it does all the calculations and data processing.
+	- Ports:: Connection points that can be used to extend the functionalities of a computer.
+	- RAM:: The Random Access Memory is the computers short term memory, it is faster than a hard drive for retriving information, but the cost is higher and information is deleted when powering off.
+	- Hard Drive:: Stores all kind of information(Videos, images, text, etc.).
+	- Motherboard:: Is the component where all the other components are either mounted or connected to.
+	- Power Supplier:: Is in charge of suppling the necessary voltage to a computer to properly operate.
+	- External Data Bus(EDB):: The EDB is a row of wires that interconnects the parts of the computer.
+	- Register:: Is a space in memory where information is stores in binary form.
+	- Memory Controller Chip(MCC):: The MCC is a bridge between the CPU and the RAM.
+	- Address Buss:: The address book send the registes address of some information requested by the CPU to the MCC so it can look for it in the RAM and send that information back to the CPU.
+	- Cache Memory:: Is a smaller and faster memory than RAM, is used to store information that has been used recently near to the CPU, it uses a paradigm where recently used information is likely to be used again.
+	- Clock Wire:: Whenever some requested information is passed to the CPU, a voltage in the clock wire tell the CPU that it can start doing calculations, this proccess is called a clock cycle.
+	- Clock Speed:: The maximum number of clock cycles that CPU can handle in a certain period of time.
+	- Overcloking:: Overcloking a CPU means that it is running faster than the maximun clock speed specified by it.
+
+== CPU ==
+Is importan wherever buying a CPU to check compatibility with the motherboard, since there are different types of CPU sockets.
+
+CPUs tent to heat, so a heat sink is necessary si disipate the heat and avoid malfunctioning and possible damage to the CPU itself.
+
+CPUs can be either 32 or 64 bits, this specifies the amount of data that can be efficientle handled.
+
+== RAM ==
+RAM memory is the system short term memory, it is used to store information that the CPU is using in the current task.
+
+RAM is used due to its velocity, without RAM, it would not matter the CPU clock speed since hard drives are unable to match its speed.
+
+The RAM memory is volatile, wich means that when it is powered of, all the information stored on it is erased, this, combined with the fact that RAM is way more expensive than hard drives are the main reasons that RAM is not used as the main memory of the computer.
+
+As with CPU, is important to check compatibility of RAM with the motherboard, being DDR4 the latest RAM standard.
+
+== Peripherals ==
+Any external divice that is connected to a computer to extend its functionality is know as a peripheral
+
+Universal Serial Bus(USB) is the main method to connect peripherals to a computer.
+
+NOTE: Transefers speed of a device is usually measure in Mb, that stands for Mega bits, different from MB that stands for Mega Bytes(8 bits).
+
+== Drivers ==
+Drivers are not hardwares per se, since they are not physical, but they are a key component in hardware, drivers are programs that tell the CPU what is the meaning of the signal that is being send by a piece of hardwarCPU
+== BIOS ==
+
+
