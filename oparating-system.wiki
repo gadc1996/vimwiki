@@ -1,0 +1,22 @@
+= Operating System =
+The Operating System(OS) is the whole package that manages our computer's resources and lets us interact with it.
+
+An OS is composed of:
+	- Kernel:: The main core of the OS, it talks directly to the hardware and manage the system resources.
+	- User Space:: All the aplications that the user can interact with, like programs, GUIs, etc.
+
+The three main OS used worldwide are:
+ 	- Windows
+	- Mac
+	- Linux
+
+== Kernel ==
+The kernel is the hearth of any OS, it is resposible for:
+	- File Storage:: The data of a file
+	- File Managment:: The metadata of a file
+	- File System:: The way files are stored as a tree-like structure
+	- Proccess Management:: When one or several proccesses are being run, the kernel manages both the resources used for every proccess and the order in wich they are run(In some cases also multitasking)
+	- Memory Usage:: The kernel optimizes memory usage and makes sure that every procces have enough memory to run
+	- I/O Management:: The Input Output(I/O) refers to any external hardware that can be used to interact with the computer.
+
+
