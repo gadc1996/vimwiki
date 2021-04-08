@@ -1,0 +1,29 @@
+= Commands =
+== One Key Commands ==
+- 5:: Adjust the page into the drawing area.
+- #:: Toggle grid visibility
+- %:: Toogle snaping
+- s:: Select tool 
+- |:: Toogle guide lines
+
+== Function Key Commands ==
+- <F1>:: Select tool 
+- <F4>:: Rectangle tool
+
+== Control Key Commands ==
+For every one of the following commands, the Ctrl key should be pressed at the same time as the command key.
+For example:
+- +:: Merge paths
+The above command should be used as Ctrl+(+), this convention of just specify the command key is to avoid repeting Ctrl+ for every command
+
+- s:: Save File
+- +:: Merge paths
+== Control Shift Keys Commands ==
+For every one of the following commands, the Ctrl and Shift keys should be pressed at the same time as the command key.
+For example:
+- f:: Fill and stroke menu
+The above command should be used as Ctrl+Shift+(f), this convention of just specify the command key is to avoid repeting Ctrl+ for every command
+
+- e:: Export file
+- f:: Fill and stroke menu
+

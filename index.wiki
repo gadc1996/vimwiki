@@ -1,6 +1,7 @@
 = Index =
 - [[bash/index|Bash]]
 - [[git/index|Git]]
+- [[inkscape/index|Inkscape]]
 - [[internet/index|Internet]]
 - [[linux/index|Linux]]
 - [[networking|Networking]]
